@@ -1,0 +1,73 @@
+<ul class="catalog__list">
+    {{#each items}}
+    {{#if popular}}
+    <li class="catalog__item catalog-popular">
+    {{else}}
+    <li class="catalog__item">
+    {{/if}}
+        <div class="item-left">
+            <div class="block__title">
+                <h2 class="h2__title padding-left">{{title}}</h1>
+            </div>
+            <ul class="left__list">
+                {{#each address}}
+                <li class="left__item">{{this}}</li>
+                {{/each}}
+            </ul>
+            <div class="wrap">
+                <div class="block__pic">
+                    <img class="left-img" src="{{src}}" alt="{{title}}">
+                </div>
+                <div class="descr">
+                    <ul class="descr__list">
+                        {{#each items}}
+                        <li class="descr__item">{{this}}</li>
+                        {{/each}}
+                    </ul>
+                   <div class="descr__shrt-text">
+                       <div class="shrt-text">{{text}}</div>
+                   </div> 
+                   {{#if incl-show}}
+                        <ul class="descr-incl-list">
+                            {{#each included}}
+                            <li class="descr-incl-item">
+                                <span class="circle"></span>
+                                <span class="incl-text">{{this}}</span>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                   <div class="descr__date">{{date}}</div>
+                    <div class="descr__more">
+                        <a href="{{link}}" class="descr__more-link">Посмотреть еще смены</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="item-right">
+            <div class="wrap_adapt--stars">
+                <div class="right-stars">
+                    {{#each stars}}
+                        <img class="stars-svg" src="../../images/star.png" alt="{{this}}">
+                    {{/each}}
+                </div>
+                <div class="number-of-stars">
+                    <span class="number-stars">{{number-stars}}</span>
+                    <span class="total-stars">5</span>
+                </div>
+                <div class="number-reviews">{{reviews}}</div>
+            </div>
+            <div class="wrap_adapt--price">
+                <div class="price-of-date">{{price-of-date}}</div>
+                <div class="catalog__total-price">{{price}} </div>
+            </div>
+            <div class="wrap_adapt--button">
+                    <div class="block__button catalog--margin-top">
+                        <a href="{{link-more}}" class="button__link catalog__button-size">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</li>
+    {{/each}}
+</ul>

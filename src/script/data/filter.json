@@ -1,0 +1,80 @@
+{
+    "list1": {
+        "textBold": "Цена",
+        "textNormal": "Любая",
+        "items": [
+                {
+                    "value": "Спортивный",
+                    "attr": "sport"
+                },
+                {
+                    "value": "На море",
+                    "attr": "see"
+                },
+                {
+                    "value": "В палатках",
+                    "attr": "in tents"
+                },
+                {
+                    "value": "Выходного дня",
+                    "attr": "dayoff"
+                },
+                {
+                    "value": "Языковой",
+                    "attr": "language"
+                }
+        ]
+    },
+   "list2": {
+        "textBold": "Смена",
+        "textNormal": "Любая",
+        "items": [
+            {
+                "value": "Спортивный",
+                "attr": "sport"
+            },
+            {
+                "value": "На море",
+                "attr": "see"
+            },
+            {
+                "value": "В палатках",
+                "attr": "in tents"
+            },
+            {
+                "value": "Выходного дня",
+                "attr": "dayoff"
+            },
+            {
+                "value": "Языковой",
+                "attr": "language"
+            }
+        ]
+    },
+   "list3": {
+        "textBold": "Отзывы",
+        "textNormal": "Любая",
+        "items": [
+            {
+                "value": "Спортивный",
+                "attr": "sport"
+            },
+            {
+                "value": "На море",
+                "attr": "see"
+            },
+            {
+                "value": "В палатках",
+                "attr": "in tents"
+            },
+            {
+                "value": "Выходного дня",
+                "attr": "dayoff"
+            },
+            {
+                "value": "Языковой",
+                "attr": "language"
+            }
+        ]
+    }
+}

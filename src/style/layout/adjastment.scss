@@ -1,0 +1,110 @@
+.wrapper {
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 15px;
+    @include laptop {
+        max-width: 992px;
+        
+    }
+    @include tablets {
+        max-width: 768px;
+    }
+    @include phones {
+        max-width: 480px;
+    }
+     @include phones320 {
+        min-width: 320px;
+    }
+}
+.h1__title {
+    font-family: "Mb";
+    font-size: 40px;
+    @include desktop {
+        font-size: 30px;
+    }
+     @include laptop {
+        font-size: 23px;
+    }
+     @include phones {
+        font-size: 18px;
+    }
+}
+.h2__title {
+    font-family: "Mb";
+    font-size: 18px;
+}
+.block__button {
+    display: flex;
+    justify-content: center
+}
+.button__link {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mb";
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: background-color ease-in-out .3s;
+    &:hover {
+        background-color: #3e84ec;
+        // background-color: rgb(26, 188, 156);
+    }
+    &:active {
+        background-color: rgb(26, 188, 156);
+    }
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;  
+  appearance: none; 
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+    
+  
+}
+.tag {
+    display: none;
+    width: 30px;
+    height: 140px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: $blue;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    writing-mode: tb-rl;
+    padding-top: 5px;
+    transition: all ease-in-out .3s;
+    font-family: 'Mr';
+    @include desktop1230 {
+        display: flex;
+        ustify-content: center;
+        align-items: center;
+    }
+}
+.tag_active {
+    @include desktop1230 {
+        right: 300px;
+        background-color: $yellow;
+    }
+    @include phones {
+        right: 250px;
+    }
+}

@@ -1,0 +1,20 @@
+<div class="aside__search">
+    <div class="refine-search__text">Уточните поиск</div>
+    {{#each items}}
+        <div class="search__wrap">
+            <div class="search__shrt-text">{{textBold}}</div>
+            <div class="search__selected">{{textNormal}}</div>
+            {{!-- wrap__search__list-show  класс показывает скрытые списки--}}
+            <div class="wrap__search__list">
+                <ul class="search__list">
+                    {{#each items}}
+                        <li class="search__item">{{value}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    {{/each}}
+    <div class="block__button catalog--margin-top">
+        <button type="submit" class="button__link aside__button-style">Найти лагерь</button>
+    </div>
+</div>

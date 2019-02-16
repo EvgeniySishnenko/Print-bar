@@ -1,0 +1,63 @@
+.section__catalog {
+    width: 100%;
+    padding-top: 20px;
+}
+.show_mobile--filter {
+    display: none;
+    font-family: 'Mr';
+    cursor: pointer;
+    @include tablets {
+        display: block;
+        margin-top: 20px;
+    }
+}
+.wrap__content {
+    display: flex;
+    padding-top: 30px;
+}
+.main {
+    width: 75%;
+    margin-right: 3%;
+    @include desktop1230 {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+.aside {
+    width: 22%;
+    position: static;
+    @include desktop1230 {
+        position: fixed;
+        top: 20%;
+        right: -400px;
+        transition: right ease-in-out .3s;
+        width: 300px;
+        z-index: 30;
+    }
+    @include phones {
+        width: 250px;
+    }
+}
+.aside-show {
+    @include desktop1230 {
+        right: 0;
+    }
+}
+.block__result {
+    font-family: "Mb";
+    font-size: 24px;
+    margin-top: 20px;
+    @include desktop {
+        font-size: 18px;
+    }
+     @include laptop {
+        font-size: 16px;
+    }
+     @include phones {
+        font-size: 16px;
+        font-family: "Mr";
+    }
+}
+.result__quantity {
+    color: blue;
+}

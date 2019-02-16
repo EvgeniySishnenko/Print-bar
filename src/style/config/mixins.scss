@@ -1,0 +1,46 @@
+// $univ: 830px;
+// @mixin adapt {
+// 	@media screen and (max-width: $univ) {
+// 		@content;
+// 	}
+// }
+@mixin desktop1230 {
+	@media screen and (max-width: $desktop1230) {
+		@content;
+	}
+}
+
+
+@mixin desktop {
+	@media screen and (max-width: $desktop) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: $laptop){
+		@content;
+	}
+}
+@mixin tablets600 {
+	@media screen and (max-width: $tablets600){
+		@content;
+	}
+}
+@mixin tablets {
+	@media screen and (max-width: $tablets){
+		@content;
+	}
+}
+
+@mixin phones {
+	@media screen and (max-width: $phones){
+		@content;
+	}
+}
+
+@mixin phones320 {
+	@media screen and (max-width: $phones320){
+		@content;
+	}
+}

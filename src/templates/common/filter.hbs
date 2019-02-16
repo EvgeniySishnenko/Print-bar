@@ -1,0 +1,19 @@
+
+<ul class="filter__list">
+    {{#each items}}
+    <li class="filter__item">
+        <div class="wrap__filter">
+            <span class="text__bold">{{textBold}}:</span>
+            <span class="text__normal">{{textNormal}}</span>
+        </div>
+            <div class="wrap__filter__sub-list ">
+                <ul class="filter__sub-list">
+                    {{#each items}}
+                        <li class="filter__sub-item">{{value}}</li>
+                    {{/each}}
+                 
+                </ul>
+            </div>
+    </li>
+{{/each}}
+</ul>

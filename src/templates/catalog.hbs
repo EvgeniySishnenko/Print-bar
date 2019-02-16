@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{htmlWebpackPlugin.options.title}}</title>
+    
+</head>
+<body>
+<div class="wrapper">
+   <section class="section section__catalog">
+       <div class="container">
+        <div class="block__title">
+            <h1 class="h1__title">Языковые и оздоровительные лагеря в Краснодарском крае на берегу Черного моря</h1>
+        </div>
+        <div class="block__result">
+            Найдено <span class="result__quantity">123</span> детских лагеря
+        </div>
+        <div class="show_mobile--filter">Показать фильтр</div>
+        <div class="wrap__content">
+            <main class="main">
+                <div class="block__filter">
+                    {{> "./common/filter.hbs"}}
+                </div>
+                <div class="catalog-content">
+                    {{> "./common/catalog-content.hbs"}}
+                </div>
+            </main>
+            <aside class="aside">
+                {{> "./common/search.hbs"}}
+            </aside>
+       </div>
+    <div class="page_navigation">
+        {{> "./common/page-navigation.hbs"}}
+    </div>
+    </div>
+   </section>
+   <div class="tag">Показать фильтр</div>
+</div>
+</body>
+</html>

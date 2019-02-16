@@ -1,0 +1,330 @@
+.catalog-content {
+    padding: 40px 0 20px 0;
+    @include tablets {
+        padding: 0 0 20px 0;
+    }
+}
+.catalog__list {
+    width: 100%;
+}
+.catalog__item {
+    width: 100%;
+    min-height: 326px;
+    height: auto;
+    display: flex;
+    position: relative;
+    box-shadow: -1px 1px 15px 2px rgba(244,244,244,1);
+    margin-bottom: 30px;
+
+    @include laptop {
+        display: block;
+    }
+}
+.catalog-popular {
+    box-shadow: 3px 0px 20px -1px rgba(255,197,84,1);
+    &:after {
+        display: block;
+        width: 90px;
+        height: 90px;
+        content: '';
+        position: absolute;
+        top: -5px;
+        right: -8px;
+        background: url("./../images/popular.png");
+        background-repeat: no-repeat;
+    }
+    @include tablets600 {
+        &:after {
+            display: none;
+        }
+    }
+    .item-right {
+        background-color: #fff0d4;
+        @include tablets600 {
+            background-color: #fffbf3;
+        }
+    }
+    .item-left {
+        background-color: #fffbf3;
+    }
+
+  
+}
+.item-left {
+    width: 74%;
+    height: 100%;
+    padding: 25px 0 20px 25px;
+    @include laptop {
+        width: 100%;
+    }
+    @include tablets600 {
+        padding: 25px 0 20px 0;
+    }
+}
+.left__list {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    @include phones {
+        display: none;
+    }
+}
+.left__item {
+    font-family: 'Mr';
+    vertical-align: middle;
+    position: relative;
+    margin-right: 40px;
+    &:after {
+            content: ' ';
+            display: inline-block;
+            vertical-align: middle;
+            width: 5px;
+            height: 5px;
+            background-color: $dark;
+            margin-left: 15px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    &:last-child {
+        &:after {
+            display: none;
+            margin-right: 0;
+        }
+        
+    }
+}
+.wrap {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    @include tablets600 {
+        display: block;
+    }
+}
+.block__pic {
+    width: 200px;
+    height: auto;
+    @include tablets600 {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+    }
+}
+.left-img {
+    display: block;
+    max-width: 100%;
+    // height: 100%;
+}
+.descr {
+    padding-left: 25px;
+    width: calc(100% - 200px);
+     @include tablets600 {
+        padding-left: 0;
+    }
+    @include tablets600 {
+       width: 100%;
+    }
+}
+.descr__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    @include tablets {
+        display: none;
+    }
+}
+.descr__item {
+    font-family: 'Mr';
+    font-size: 13px;
+    line-height: 0;
+    height: 24px;
+    border: 2px solid $yellow;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.descr__shrt-text {
+    margin-top: 10px;
+    padding-right: 20px;
+     @include tablets600 {
+        display: none;
+    }
+}
+.shrt-text {
+    font-family: 'Mr';
+    font-size: 13px;
+}
+
+.descr-incl-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    @include tablets {
+        display: none;
+    }
+}
+.descr-incl-item {
+    margin-right: 8px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.circle {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #d7dcde;
+    border-radius: 50%;
+    position: relative;
+    line-height: 0;
+    vertical-align: middle;
+    margin-right: 3px;
+    &:after {
+        display: block;
+        content: '';
+        width: 4px;
+        height: 4px;
+        background-color: #d7dcde;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.incl-text {
+    font-family: 'Mr';
+    font-size: 11px;
+}
+.descr__date {
+    font-family: "Mb";
+    margin-top: 20px;
+    @include tablets600 {
+       width: 100%;
+       text-align: center;
+    }
+}
+.descr__more {
+    margin-top: 10px;
+    @include tablets600 {
+       width: 100%;
+       text-align: center;
+    }
+}
+.descr__more-link {
+    font-family: "Mr";
+    color: $blue;
+    text-decoration: underline;
+    transition: all ease-in-out .3s;
+    &:hover {
+        color: darken($blue, 5%);
+        text-decoration: none;
+    }
+}
+.item-right {
+    width: 26%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include laptop {
+        width: 100%;
+        padding: 10px 0;
+        flex-direction: inherit;
+        flex-wrap: wrap
+    }
+    @include tablets600 {
+        background-color: inherit;
+    }
+}
+.right-stars {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.stars-svg {
+    // fill: $yellow;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.number-of-stars {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+.number-stars {
+    font-family: 'Mb';
+     font-size: 17px;
+}
+.number-reviews {
+    font-family: 'Mr';
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+.total-stars {
+    font-family: 'Mr';
+    font-size: 14px;
+}
+.price-of-date {
+    font-family: 'Mr';
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+    @include laptop {
+        margin-top: 0;
+    }
+}
+.catalog__total-price {
+    font-family: 'Mb';
+    font-size: 27px;
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.catalog__button-size {
+    width: 171px;
+    height: 48px;
+    @include tablets {
+        width: 150px;
+        height: 35px; 
+        font-size: 16px;
+    }
+}
+.catalog--margin-top {
+    margin-top: 25px;
+}
+.wrap_adapt--price,
+.wrap_adapt--stars {
+    @include laptop {
+        width: 30%;
+    }
+     @include tablets600 {
+        display: none;
+    }
+}
+.wrap_adapt--button {
+    @include laptop {
+        width: 100%;
+    }
+}
+.padding-left {
+     @include tablets600 {
+        padding-left: 20px;
+    }
+    
+}

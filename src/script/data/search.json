@@ -1,0 +1,80 @@
+{
+    "list1": {
+        "textBold": "Возраст",
+        "textNormal": "Выберите возраст",
+        "items": [
+            {
+                "value": "Спортивный",
+                "attr": "sport"
+            },
+            {
+                "value": "На море",
+                "attr": "see"
+            },
+            {
+                "value": "В палатках",
+                "attr": "in tents"
+            },
+            {
+                "value": "Выходного дня",
+                "attr": "dayoff"
+            },
+            {
+                "value": "Языковой",
+                "attr": "language"
+            }
+        ]
+    },
+    "list2": {
+        "textBold": "Страна",
+        "textNormal": "Выберите страну",
+        "items": [
+            {
+                "value": "Спортивный",
+                "attr": "sport"
+            },
+            {
+                "value": "На море",
+                "attr": "see"
+            },
+            {
+                "value": "В палатках",
+                "attr": "in tents"
+            },
+            {
+                "value": "Выходного дня",
+                "attr": "dayoff"
+            },
+            {
+                "value": "Языковой",
+                "attr": "language"
+            }
+        ]
+    },
+    "list3": {
+        "textBold": "Страна",
+        "textNormal": "Выберите страну",
+        "items": [
+            {
+                "value": "Спортивный",
+                "attr": "sport"
+            },
+            {
+                "value": "На море",
+                "attr": "see"
+            },
+            {
+                "value": "В палатках",
+                "attr": "in tents"
+            },
+            {
+                "value": "Выходного дня",
+                "attr": "dayoff"
+            },
+            {
+                "value": "Языковой",
+                "attr": "language"
+            }
+        ]
+    }
+}
