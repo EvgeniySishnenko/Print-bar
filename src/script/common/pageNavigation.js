@@ -1,6 +1,6 @@
 const navList = document.querySelector('.nav-list');
 
-for ( let i = 1; i < 18; i++) {
+for ( let i = 1; i < 16; i++) {
     const li = document.createElement('li');
     const a = document.createElement('a');
 
